@@ -19,7 +19,7 @@ EOF
 
 # Create topic subscriptions with a list of email
 resource "aws_sns_topic_subscription" "backup_notification" {
-  for_each = toset(var.emails)
+  for_each = toset(var.subscription_emails)
 
   topic_arn = aws_sns_topic.backup_notification.arn
   protocol  = "email"
