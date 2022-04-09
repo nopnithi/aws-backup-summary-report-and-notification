@@ -4,7 +4,7 @@ region     = "ap-southeast-1"
 bucket_name = "nopnithi-aws-backup-reports"
 
 report_name      = "backup_jobs_report"
-report_retention = 1
+report_retention = 90
 
 function_name          = "nopnithi-aws-backup-notification"
 function_file          = "../lambda/lambda_code.zip"
